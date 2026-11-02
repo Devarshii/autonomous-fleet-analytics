@@ -1,0 +1,8 @@
+metric,Policy_A_Historical,Policy_B_Forecast
+Total Demand,7629.0,7629.0
+Fleet Size,1000.0,1000.0
+Rides Served,1000.0,1000.0
+Unserved Demand,6629.0,6629.0
+Idle Vehicles,0.0,0.0
+Service Rate (%),13.107877834578582,13.107877834578582
+Fleet Utilization (%),100.0,100.0

@@ -1,0 +1,7 @@
+metric,value
+reference_average_demand,15.61
+current_average_demand,18.1
+demand_change_percent,15.98
+mean_drift_status,DRIFT_DETECTED
+psi_score,0.0156
+psi_status,STABLE

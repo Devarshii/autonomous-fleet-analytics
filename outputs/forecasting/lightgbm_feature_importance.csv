@@ -1,0 +1,15 @@
+feature,importance
+rolling_mean_168,2520
+hour,1810
+rolling_mean_24,1639
+day_of_month,1552
+lag_1,1322
+lag_168,1201
+lag_24,1194
+day_of_week_num,1056
+hour_sin,928
+hour_cos,673
+LocationID,453
+dow_sin,416
+dow_cos,218
+is_weekend,18

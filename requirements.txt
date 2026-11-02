@@ -1,0 +1,17 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+pyarrow
+duckdb
+jupyter
+h3
+geopandas
+shapely
+lightgbm
+streamlit
+plotly
+ortools
+requests
+holidays
+joblib
