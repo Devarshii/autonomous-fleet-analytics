@@ -874,3 +874,39 @@ NYC taxi demand is based on public transportation data.
 Autonomous-vehicle telemetry, maintenance data, and certain operational-risk variables used in this project are simulated for educational and analytical purposes.
 
 The project should not be interpreted as representing the internal operations, systems, or performance of any real autonomous vehicle company.
+
+
+## 📸 Dashboard Screenshots
+
+### 1. Executive Overview
+![Executive Overview](screenshots/executive_overview.png)
+
+### 2. Demand Forecasting
+![Forecasting Overview](screenshots/demand_forecasting_overview.png)
+
+![Actual vs Predicted Demand](screenshots/actual_vs_predicted.png)
+
+![Forecast Model Comparison](screenshots/forecast_model_comparison.png)
+
+### 3. Fleet Positioning
+![Fleet Positioning Map](screenshots/fleet_positioning_map.png)
+
+![Vehicle Allocation](screenshots/vehicle_allocation.png)
+
+### 4. Simulation Results
+![Simulation Results](screenshots/simulation_results.png)
+
+### 5. Maintenance Analytics
+![Maintenance Overview](screenshots/maintenance_overview.png)
+
+![Maintenance Schedule](screenshots/maintenance_schedule.png)
+
+### 6. Stuck-Risk Monitoring
+![Stuck Risk Overview](screenshots/stuck_risk_overview.png)
+
+![Stuck Risk Recommendations](screenshots/stuck_risk_recommendations.png)
+
+### 7. Shock & Drift Analysis
+![Shock Drift Overview](screenshots/shock_drift_overview.png)
+
+![Shock Drift Analysis](screenshots/shock_drift_analysis.png)
