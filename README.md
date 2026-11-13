@@ -1,5 +1,11 @@
 # 🚕 Autonomous Fleet Analytics
 
+## 🌐 Live Dashboard
+
+**[Launch Autonomous Fleet Analytics Dashboard](https://autonomous-fleet-analytics-mwa4bxzpvi9ezcx8tsr5o4.streamlit.app/)**
+
+Explore demand forecasting, fleet positioning, simulation results, maintenance analytics, stuck-risk monitoring, and shock & drift analysis through the interactive Streamlit application.
+
 ## Demand-Aware Fleet Positioning and Health Analytics for Autonomous Vehicles
 
 This project presents an end-to-end analytics system designed to support autonomous fleet operations using demand forecasting, vehicle positioning, fleet simulation, maintenance analytics, stuck-risk monitoring, and demand-drift detection.
