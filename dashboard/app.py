@@ -28,7 +28,8 @@ page = st.sidebar.radio(
         "Simulation Results",
         "Maintenance Analytics",
         "Stuck-Risk Monitoring",
-        "Shock & Drift Analysis"
+        "Shock & Drift Analysis",
+            "Fleet Decision Lab"
     ]
 )
 
@@ -1162,3 +1163,11 @@ if page == "Shock & Drift Analysis":
         - and prepare fleet capacity for major events.
         """
     )
+
+# ============================================================
+# FLEET DECISION LAB - PAGE 8
+# ============================================================
+
+if page == "Fleet Decision Lab":
+    from decision_lab_view import render
+    render()
