@@ -910,3 +910,114 @@ The project should not be interpreted as representing the internal operations, s
 ![Shock Drift Overview](screenshots/shock_drift_overview.png)
 
 ![Shock Drift Analysis](screenshots/shock_drift_analysis.png)
+
+---
+
+## 🚕 Advanced Fleet Decision Intelligence
+
+The project extends demand forecasting into operational and
+business decision-making for a simulated autonomous vehicle fleet.
+
+**Live Dashboard:** [Autonomous Fleet Analytics](https://autonomous-fleet-analytics-mwa4bxzpvi9ezcx8tsr5o4.streamlit.app/)
+
+### Interactive Dashboard Modules
+
+1. Executive Overview
+2. Demand Forecasting
+3. Fleet Positioning
+4. Simulation Results
+5. Maintenance Analytics
+6. Stuck-Risk Monitoring
+7. Shock & Drift Analysis
+8. Fleet Decision Lab
+
+### Fleet Decision Lab
+
+The interactive Decision Lab compares three simulated
+fleet-positioning policies:
+
+- No Repositioning
+- Forecast-Driven Repositioning
+- Arrival-Aware Repositioning
+
+Users can adjust hypothetical contribution per completed
+ride and operating cost per empty mile to examine:
+
+- Requests served and service rates
+- Estimated passenger waiting times
+- Estimated empty driving
+- Modeled contribution by policy
+- Financial break-even thresholds
+- Business decision recommendations
+
+Financial outcomes are scenario estimates, not measured
+revenue or actual operating profit.
+
+### January–February Fleet Evaluation
+
+The fleet policies were evaluated on two consecutive
+weeks of cleaned NYC Yellow Taxi trip records.
+
+| Metric | January 25–31 | February 1–7 |
+|---|---:|---:|
+| Valid replay requests | 796,566 | 847,348 |
+| No-repositioning service rate | 28.97% | 30.39% |
+| Forecast-driven service rate | 46.25% | 44.81% |
+| Additional simulated rides served | +137,650 | +122,185 |
+| Additional estimated empty miles | +252,379 | +217,782 |
+| Extra empty miles per extra ride | 1.833 | 1.782 |
+
+Forecast-driven positioning served more simulated requests
+in both evaluation weeks, at the cost of additional
+estimated empty driving.
+
+These findings do not establish real-world robotaxi
+performance or profitability.
+
+### Demand Forecast Validation
+
+A January-trained LightGBM demand model was evaluated
+without retraining on February 1–7, 2025.
+
+| Forecast metric | Historical baseline | LightGBM |
+|---|---:|---:|
+| February MAE | 3.860 | 3.868 |
+| February WAPE | 19.67% | 19.71% |
+
+The model did not outperform the historical baseline
+on February data. This result is retained to provide
+a transparent out-of-time evaluation.
+
+February forecasts use observed demand from previously
+completed hours to construct lagged features. They are
+rolling one-hour-ahead predictions, not forecasts made
+for the full week in advance.
+
+### Validation and Reproducibility
+
+Key project files:
+
+- `src/build_trip_replay.py`
+- `src/build_february_replay.py`
+- `src/forecast_february.py`
+- `src/geographic_dispatch_simulator.py`
+- `src/evaluate_february_fleet.py`
+- `dashboard/decision_lab.py`
+- `dashboard/decision_lab_view.py`
+- `outputs/validation/january_february_comparison.md`
+
+Launch the main application from the repository root:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+The project uses observed human-driven taxi records and
+simulated autonomous fleet behavior. Travel distances
+are approximated from taxi-zone geography. The simulation
+does not comprehensively model road routing, charging,
+maintenance, cancellations, or real-world AV telemetry.
+
+The project is intended as an analytics and decision
+support demonstration, not a validated production
+robotaxi optimization system.
