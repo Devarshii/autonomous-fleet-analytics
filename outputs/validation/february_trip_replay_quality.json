@@ -1,0 +1,14 @@
+{
+  "source": "data/raw/yellow_tripdata_2025-02.parquet",
+  "start_inclusive": "2025-02-01 00:00:00",
+  "end_exclusive": "2025-02-08 00:00:00",
+  "geographically_matched_zones": 257,
+  "raw_rows_scanned": 3577543,
+  "pickups_in_window": 883184,
+  "valid_replay_requests": 847348,
+  "excluded_in_window": 35836,
+  "median_duration_min": 12.1,
+  "median_distance_miles": 1.73,
+  "cross_zone_trips_pct": 96.06855742858896,
+  "note": "Human-driven taxi trips used as a robotaxi demand proxy. Same geographic and quality filters as January development replay. This file does not contain model forecasts."
+}

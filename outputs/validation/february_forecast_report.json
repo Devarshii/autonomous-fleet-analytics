@@ -1,0 +1,19 @@
+{
+  "evaluation_start": "2025-02-01 00:00:00",
+  "evaluation_end_exclusive": "2025-02-08 00:00:00",
+  "zones": 257,
+  "hours": 168,
+  "rows": 43176,
+  "replay_requests": 847348,
+  "actual_demand": 847348,
+  "baseline_mae": 3.8600843060959793,
+  "lightgbm_mae": 3.867763219225305,
+  "baseline_wape_pct": 19.668778353167767,
+  "lightgbm_wape_pct": 19.707905695566847,
+  "mae_improvement_pct": -0.19893122845008787,
+  "model_retrained": false,
+  "forecast_type": "One-hour-ahead rolling evaluation using observed demand from completed prior hours.",
+  "model_path": "models/lightgbm_demand_model.pkl",
+  "prediction_path": "data/processed/lightgbm_predictions_feb2025.parquet",
+  "note": "February is an out-of-time evaluation. Current-hour targets are never features."
+}

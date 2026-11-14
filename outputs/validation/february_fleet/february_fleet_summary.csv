@@ -1,0 +1,4 @@
+policy,hours,fleet_size,requests,served,unserved,service_rate_pct,mean_wait_min_served,p90_wait_min_served,repositions,estimated_pickup_empty_miles,estimated_reposition_empty_miles,estimated_total_empty_miles,trip_utilization_pct,pickup_utilization_pct,reposition_utilization_pct,additional_rides_vs_baseline,additional_empty_miles_vs_baseline,service_rate_gain_pp
+no_repositioning,168,1000,847348,257515,589833,30.391,5.606,8.182,0,309087.28,0.0,309087.28,36.542,14.318,0.0,0,0.0,0.0
+forecast_repositioning,168,1000,847348,379700,467648,44.81,5.348,7.795,9766,420547.42,106321.66,526869.08,52.91,20.136,4.22,122185,217781.79999999993,14.419000000000004
+arrival_aware_repositioning,168,1000,847348,272296,575052,32.135,5.545,8.035,3555,320889.95,7700.73,328590.68,38.592,14.973,0.311,14781,19503.399999999965,1.7439999999999998
